@@ -19,7 +19,9 @@ const Breadcrumb: React.FC = () => {
     <nav className="breadcrumb">
       <span>Breadcrumb 1 / </span>
       <span> Breadcrumb 1.1</span>
+      <h1 className="heading1">Heading 1</h1>
     </nav>
+    
   );
 };
 

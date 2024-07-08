@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Checkbox.css';
+import './Checkboxes.css';
 
 const options = [
   'Option 1',

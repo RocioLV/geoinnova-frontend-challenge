@@ -29,7 +29,7 @@ const Tables: React.FC<TableProps> = ({ rows, columns }) => {
 
   return (
     <div className="table-section">
-      <h2>Tabla</h2>
+      <h2>Heading 2</h2>
       <p>Roin nunc quam, auctor placerat iaculis eu, vulputate eu mi.</p>
       <div className="table-container">
         <table className="custom-table">

@@ -1,22 +1,42 @@
-.texts-container {
+/* Subtitle */
+.subtitle {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #000000;
   position: absolute;
-  width: 500px;
-  height: 211px;
-  left: 277px;
-  top: 193px;
+  width: 104.9px;
+  height: 19px;
+  left: 865px;
+  top: 598px;
 }
 
-.heading1 {
-  font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
-  margin-bottom: 16px; /* Espaciado inferior entre Heading 1 y Heading 2 */
+/* Badges Container */
+.badges-container {
+  position: absolute;
+  width: 1012px;
+  height: 123px;
+  left: 865px;
+  top: 598px;
 }
 
-.heading2 {
-  font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
-  margin-bottom: 8px; /* Espaciado inferior entre Heading 2 y el párrafo */
-}
-
-.paragraph {
-  font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
-  line-height: 1.5; /* Ajusta el interlineado según sea necesario */
+/* Badge */
+.badge {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  gap: 10px;
+  width: 60px;
+  height: 24px;
+  background: #A8E2F0;
+  border: 1px solid #A8E2F0;
+  border-radius: 15px;
+  margin-bottom: 8px; /* Para espacio entre filas */
+  margin-right: 8px; /* Para espacio entre badges */
 }

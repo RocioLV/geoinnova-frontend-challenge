@@ -1,9 +1,0 @@
-.divider {
-  position: absolute;
-  width: 1px;
-  height: 752px;
-  left: 801px;
-  top: 116px;
-  border: 1px solid #979797;
-  transform: rotate(0deg); /* No need to rotate as it's a vertical line */
-}

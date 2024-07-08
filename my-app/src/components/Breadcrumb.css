@@ -10,3 +10,8 @@
   color: #979797;
   margin: 24px;
 }
+
+.heading1 {
+  font-size: 34px; /* Ajusta el tamaño de fuente según sea necesario */
+  margin-bottom: 16px; /* Espaciado inferior entre Heading 1 y Heading 2 */
+}

@@ -3,17 +3,17 @@ import { Badge } from 'react-bootstrap';
 import './Badges.css';
 
 const Badges: React.FC = () => {
-  const badges = Array.from({ length: 35 }, (_, i) => `Badge`);
+  const badges = Array.from({ length: 35 }, (_, i) => (
+    <Badge key={i} pill className="custom-badge">
+      Badge
+    </Badge>
+  ));
 
   return (
-    <div>
-      <h3>Subtitle</h3>
-      <div className="badge-container">
-        {badges.map((badge, index) => (
-          <Badge key={index} pill className="custom-badge">
-            {badge}
-          </Badge>
-        ))}
+    <div className="badges-container">
+      <h4>Subtitle</h4>
+      <div className="badge-list">
+        {badges}
       </div>
     </div>
   );

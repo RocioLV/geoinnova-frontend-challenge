@@ -1,1 +1,0 @@
-# geoinnova-frontend-challenge

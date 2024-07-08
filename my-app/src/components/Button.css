@@ -1,0 +1,13 @@
+.buttons-container {
+  position: absolute;
+  width: 212px;
+  height: 38px;
+  left: 1684px;
+  top: 883px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-button {
+  width: 100px; /* Ajusta el ancho según sea necesario */
+}

@@ -1,0 +1,12 @@
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-badge {
+  background-color: #b3e5fc; /* Celeste opaco */
+  color: #0d47a1; /* Azul oscuro opaco */
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+}

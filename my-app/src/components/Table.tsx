@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Table from 'react-bootstrap/Table';
+import Form from 'react-bootstrap/Form';
 
-interface TableProps {
-  rows: string[][];
-}
+const Tables: React.FC = () => {
+  const [selectedRadios, setSelectedRadios] = useState<number[]>(new Array(4).fill(-1));
 
-const Table: React.FC<TableProps> = ({ rows }) => {
+  const handleRadioChange = (rowIndex: number, columnIndex: number) => {
+    const newSelectedRadios = [...selectedRadios];
+    newSelectedRadios[rowIndex] = columnIndex;
+    setSelectedRadios(newSelectedRadios);
+  };
+
+  const rows = ['Row 1', 'Row 2', 'Row 3', 'Row 4', 'Row 5', 'Row 6', 'Row 7'];
+
   return (
-    <table className="table">
+    <Table striped bordered hover>
       <thead>
         <tr>
           <th>Row name</th>
@@ -19,16 +27,25 @@ const Table: React.FC<TableProps> = ({ rows }) => {
         </tr>
       </thead>
       <tbody>
-        {rows.map((row, index) => (
-          <tr key={index}>
-            {row.map((cell, cellIndex) => (
-              <td key={cellIndex}>{cell}</td>
+        {rows.map((row, rowIndex) => (
+          <tr key={rowIndex}>
+            <td>{row}</td>
+            {new Array(6).fill(null).map((_, columnIndex) => (
+              <td key={columnIndex}>
+                <Form.Check
+                  type="radio"
+                  name={`row-${rowIndex}`}
+                  id={`row-${rowIndex}-col-${columnIndex}`}
+                  checked={selectedRadios[rowIndex] === columnIndex}
+                  onChange={() => handleRadioChange(rowIndex, columnIndex)}
+                />
+              </td>
             ))}
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
 
-export default Table;
+export default Tables;

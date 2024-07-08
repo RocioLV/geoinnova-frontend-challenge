@@ -1,17 +1,28 @@
-import React from 'react';
-import ListGroup from 'react-bootstrap/ListGroup';
+import React, { useState } from 'react';
+import './Sidebar.css';
 
-interface SidebarProps {
-  items: string[];
-}
+const Sidebar: React.FC = () => {
+  const [selectedMenuItem, setSelectedMenuItem] = useState<string>('Menu item 1');
 
-const Sidebar: React.FC<SidebarProps> = ({ items }) => {
+  const handleMenuItemClick = (menuItem: string) => {
+    setSelectedMenuItem(menuItem);
+  };
+
   return (
-    <ListGroup as="ol" numbered>
-      <ListGroup.Item as="li">Cras justo odio</ListGroup.Item>
-      <ListGroup.Item as="li">Cras justo odio</ListGroup.Item>
-      <ListGroup.Item as="li">Cras justo odio</ListGroup.Item>
-    </ListGroup>
+    <div className="sidebar">
+      <div 
+        className={`menu-item ${selectedMenuItem === 'Menu item 1' ? 'selected' : ''}`}
+        onClick={() => handleMenuItemClick('Menu item 1')}
+      >
+        Menu item 1
+      </div>
+      <div 
+        className={`menu-item ${selectedMenuItem === 'Menu item 2' ? 'selected' : ''}`}
+        onClick={() => handleMenuItemClick('Menu item 2')}
+      >
+        Menu item 2
+      </div>
+    </div>
   );
 };
 

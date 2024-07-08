@@ -1,59 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import './Header.css';
+import menuIcon from '../assets/menu-icon.png';
+import logo from '../assets/logo-gnv.png';
+import bellIcon from '../assets/bell-icon.png';
+import configIcon from '../assets/config-icon.png';
+import userIcon from '../assets/user-icon.png';
 
-function Header() {
+const Header: React.FC = () => {
   return (
-    <>
-      <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt="logo Geoinnova"
-              src="./src/assets/logo-gnv.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            GEOINNOVA
-          </Navbar.Brand>
-          <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            ICONO
-            ICONO 2
-            ICONO 3
-          </Navbar.Text>
-        </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
+    <header className="header">
+      <div className="header-container">
+        <div className="left-section">
+          <img src={menuIcon} alt="Menu Icon" className="menu-icon" />
+          <img src={logo} alt="Geoinnova Logo" className="logo" />
+        </div>
+        <div className="icons">
+          <img src={bellIcon} alt="Bell Icon" />
+          <img src={configIcon} alt="Config Icon" />
+          <img src={userIcon} alt="User Icon" />
+        </div>
+      </div>
+    </header>
   );
 }
 
 export default Header;
-
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-
-// function BasicExample() {
-//   return (
-//     <Navbar expand="lg" className="bg-body-tertiary">
-//       <Container>
-//         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="me-auto">
-//             <Nav.Link href="#home">ICONO</Nav.Link>
-//             <Nav.Link href="#link">ICONO2</Nav.Link>
-//             <Nav.Link href="#link">ICONO3</Nav.Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-// export default BasicExample;

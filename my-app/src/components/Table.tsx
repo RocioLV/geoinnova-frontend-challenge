@@ -1,66 +1,50 @@
-// Tables.tsx
-
 import React, { useState } from 'react';
+import Table from 'react-bootstrap/Table';
+import './Table.css';
 
-interface TableProps {
+interface TablesProps {
   rows: string[];
   columns: string[];
 }
 
-const Tables: React.FC<TableProps> = ({ rows, columns }) => {
-  // Estado para almacenar la selección de radio buttons por fila
-  const [selectedOptions, setSelectedOptions] = useState<{ [key: string]: string }>({
-    row1: 'Column 1', // Valores iniciales según la tabla
-    row2: 'Column 2',
-    row3: 'Column 3',
-    row4: 'Column 4',
-    row5: 'Column 5',
-    row6: 'Column 6',
-    row7: '', // Row 7 inicialmente no seleccionado
-  });
+const Tables: React.FC<TablesProps> = ({ rows, columns }) => {
+  const [selectedRadio, setSelectedRadio] = useState<{ [key: number]: number }>({});
 
-  // Manejar el cambio de selección de radio button
-  const handleOptionChange = (rowName: string, colName: string) => {
-    setSelectedOptions((prevOptions) => ({
-      ...prevOptions,
-      [rowName]: colName,
+  const handleRadioChange = (rowIndex: number, columnIndex: number) => {
+    setSelectedRadio((prevSelectedRadio) => ({
+      ...prevSelectedRadio,
+      [rowIndex]: columnIndex,
     }));
   };
 
   return (
-    <div className="table-section">
-      <h2>Heading 2</h2>
-      <p>Roin nunc quam, auctor placerat iaculis eu, vulputate eu mi.</p>
-      <div className="table-container">
-        <table className="custom-table">
-          <thead>
-            <tr>
-              <th>Row name</th>
-              {columns.map((col, index) => (
-                <th key={index}>{col}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                <td>{row}</td>
-                {columns.map((col, colIndex) => (
-                  <td key={`${rowIndex}-${colIndex}`}>
-                    <input
-                      type="radio"
-                      name={`row-${rowIndex}-radio`}
-                      checked={selectedOptions[row] === col}
-                      onChange={() => handleOptionChange(row, col)}
-                    />
-                  </td>
-                ))}
-              </tr>
+    <Table bordered hover className="custom-table">
+      <thead>
+        <tr>
+          <th>Row name</th>
+          {columns.map((col, colIndex) => (
+            <th key={colIndex}>{col}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, rowIndex) => (
+          <tr key={rowIndex}>
+            <td>{row}</td>
+            {columns.map((col, colIndex) => (
+              <td key={colIndex}>
+                <input
+                  type="radio"
+                  name={`row-${rowIndex}`}
+                  checked={selectedRadio[rowIndex] === colIndex}
+                  onChange={() => handleRadioChange(rowIndex, colIndex)}
+                />
+              </td>
             ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
   );
 };
 

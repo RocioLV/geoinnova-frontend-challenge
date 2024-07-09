@@ -11,7 +11,7 @@ const Badges: React.FC = () => {
 
   return (
     <div className="badges-container">
-      <h4>Subtitle</h4>
+      <h4 className="heading4">Subtitle</h4>
       <div className="badge-list">
         {badges}
       </div>

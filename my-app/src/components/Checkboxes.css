@@ -1,16 +1,8 @@
 .checkboxes-container {
   position: absolute;
-  top: 910px; /* 523px de Files + 271px de Files + 32px de separación + 84px (separación vertical) */
+  top: 587px; /* 523px de Files + 271px de Files + 32px de separación + 84px (separación vertical) */
   left: 277px; /* 253px de la sidebar + 24px de separación */
   width: 96px;
-}
-
-.heading2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #1A1A1A;
-  margin-bottom: 16px;
 }
 
 .checkbox-option {

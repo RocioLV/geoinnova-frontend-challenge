@@ -16,12 +16,10 @@ import './Breadcrumb.css';
 
 const Breadcrumb: React.FC = () => {
   return (
-    <nav className="breadcrumb">
-      <span>Breadcrumb 1 / </span>
-      <span> Breadcrumb 1.1</span>
+    <div className="breadcrumb">
+      <p>Breadcrumb 1 / Breadcrumb 1.1 </p>
       <h1 className="heading1">Heading 1</h1>
-    </nav>
-    
+    </div>
   );
 };
 

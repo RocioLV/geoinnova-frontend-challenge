@@ -1,41 +1,35 @@
 .files-container {
   position: absolute;
-  top: 523px; /* 359px desde el header + 132px de Text + 32px de separación */
+  top: 436px; /* 359px desde el header + 132px de Text + 32px de separación */
   left: 277px; /* 253px de la sidebar + 24px de separación */
   width: 451px;
-}
-
-.heading2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #1A1A1A;
-  margin-bottom: 16px;
+  height: 119px;
 }
 
 .files-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px; /* Espacio entre columnas */
+  gap: 12px  64px; /* Espacio entre columnas */
 }
 
 .file-item {
   display: flex;
   align-items: center;
-  width: 99px;
+  width: 107px;
   height: 20px;
-  margin-bottom: 16px; /* Separación vertical entre elementos */
 }
 
 .file-icon {
   width: 15px;
   height: 20px;
-  margin-right: 8px; /* Espacio entre el icono y el nombre del archivo */
+  margin-right: 8px;
+  color: #538E9C;
 }
 
 .file-name {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #538E9C;
+  color: #1A1A1A;
+  margin: -2px;
 }

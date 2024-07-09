@@ -1,17 +1,9 @@
 .breadcrumb {
   position: absolute;
   width: 245px;
-  height: 22px;
-  left: 277px;
-  top: 101px;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600; /* Semibold */
   font-size: 16px;
   color: #979797;
-  margin: 24px;
-}
-
-.heading1 {
-  font-size: 34px; /* Ajusta el tamaño de fuente según sea necesario */
-  margin-bottom: 16px; /* Espaciado inferior entre Heading 1 y Heading 2 */
+  margin: 24px 24px 0px 24px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../src/components/Header';
 import Sidebar from '../src/components/Sidebar';
-import Breadcrumb from '../src/components/Breadcrumb';
 import Text from './components/Text';
 import Files from './components/Files';
 import Checkboxes from './components/Checkboxes';
@@ -17,11 +17,9 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <Header />
-      <div className="main-container">
-        <Sidebar />
-        <div className="content-container">
+        <div className="container">
           <div className="left-content">
-            <Breadcrumb />
+            <Sidebar />
             <Text />
             <Files />
             <Checkboxes />
@@ -33,7 +31,6 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

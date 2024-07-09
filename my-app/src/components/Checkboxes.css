@@ -1,12 +1,34 @@
 .checkboxes-container {
   position: absolute;
-  top: 587px; /* 523px de Files + 271px de Files + 32px de separación + 84px (separación vertical) */
-  left: 277px; /* 253px de la sidebar + 24px de separación */
+  top: 587px;
+  left: 277px;
+  margin-bottom: 20px;
 }
 
+/* Custom Checkbox */
 .custom-checkbox {
   width: 16px;
   height: 16px;
-  background-color: #FFFFFF;
-  margin-right: 8px; /* Espacio entre el checkbox y el texto */
+  margin-right: 8px;
+  appearance: none; /* Quitar el estilo por defecto */
+  background-color: #FFFFFF; /* Fondo blanco */
+  border: 1px solid #926642; /* Borde marrón oscuro */
+  border-radius: 3px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el checkbox */
+}
+
+/* Estilo cuando el checkbox está seleccionado */
+.custom-checkbox:checked {
+  background-color: #926642; /* Color marrón oscuro */
+  border: none; /* Sin borde */
+}
+
+/* Estilo para la marca de verificación */
+.custom-checkbox:checked::after {
+  content: '✔'; /* Carácter de marca de verificación */
+  color: #FFFFFF; /* Color blanco */
+  font-size: 11px; /* Tamaño de la marca */
+  position: relative; /* Relativo a la caja */
+  left: 4px; /* Ajuste horizontal */
+  top: -4px; /* Ajuste vertical */
 }

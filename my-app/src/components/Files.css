@@ -2,7 +2,7 @@
   position: absolute;
   top: 436px; /* 359px desde el header + 132px de Text + 32px de separación */
   left: 277px; /* 253px de la sidebar + 24px de separación */
-  width: 451px;
+  width: 500px;
   height: 119px;
 }
 
@@ -15,7 +15,7 @@
 .file-item {
   display: flex;
   align-items: center;
-  width: 107px;
+  width: 110px;
   height: 20px;
 }
 
@@ -26,10 +26,3 @@
   color: #538E9C;
 }
 
-.file-name {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #1A1A1A;
-  margin: -2px;
-}

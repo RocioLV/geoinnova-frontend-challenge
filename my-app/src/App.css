@@ -1,84 +1,123 @@
-/* Estilos generales de la aplicación */
-/* App.css */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
-
+/* Estilos generales */
 body {
   font-family: 'Nunito Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  margin-left: 54px;
+  height: calc(100vh - 77px); /* Altura restando el header */
+  max-height: 100vh;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.left-content {
+  flex: 2;
   display: flex;
   flex-direction: column;
-  max-width: 1920px; 
-  max-height: 945px;
+}
+
+.right-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+}
+
+.table-container {
+  margin-top: 16px;
 }
 
 .heading1 {
-  font-weight: 600;
-  font-size: 34px; /* Ajusta el tamaño de fuente según sea necesario */
+  font-size: 34px;
   color: #538E9C;
+  margin-bottom: 16px;
 }
 
 .heading2 {
-  font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
+  font-size: 20px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #1A1A1A;
+  margin-bottom: 8px; 
 }
 
 .heading4 {
-  font-weight: 600;
-  font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+  font-size: 14px;
   color: #000000;
+  margin-top: 8px;
 }
 
 .text-14 {
   font-size: 14px;
   font-weight: 400;
-  color: #1A1A1A;
+  margin-bottom: 7px;
 }
 
 .text-16 {
   font-size: 16px;
   font-weight: 400;
-  color: #1A1A1A;
-  margin-top: 8px;
+  color: #666667;
 }
 
-.main-container {
-  display: flex;
-  height: calc(100vh - 77px); /* Altura restando el header */
-  max-height: 100vh;
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-content {
+    padding-right: 0;
+  }
+
+  .right-content {
+    padding-left: 0;
+    padding-top: 16px;
+  }
 }
 
-.content-container {
-  display: flex;
-  flex: 1;
-  max-height: 868px;
-  height: calc(100vh - 77px);
-  margin-left: 253px; /* Mover el contenido a la derecha del sidebar */
-  
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-content, .right-content {
+    padding: 8px;
+  }
+
+  .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
 }
 
-.left-content {
-  width: 548px; /* Ancho del contenido izquierdo */
-  display: flex;
-  flex-direction: column;
-  padding-top: 77px; /* Ajustar según la altura del header */
-  margin-right: 64px; /* Separación desde el divider */
-  border: 0 1px 0 0 solid #979797;
-}
+@media (max-width: 480px) {
+  .heading2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-.right-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding-top: 77px; /* Ajustar según la altura del header */
-}
+  .table-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-.table-section {
-  margin-top: 116px; /* Separación superior desde el Header */
-}
+  .left-content, .right-content {
+    padding: 8px;
+  }
 
-.badges-container {
-  margin-top: 24px; /* Separación desde la Table */
+  .badges-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

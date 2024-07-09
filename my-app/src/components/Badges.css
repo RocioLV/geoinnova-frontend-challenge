@@ -5,22 +5,18 @@
   max-height: 123px;
   left: 865px;
   top: 598px;
+  flex-wrap: wrap;
+  margin-top: 16px;
 }
 
 /* Badge */
 .badge {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 6px;
-  gap: 10px;
   width: 60px;
   height: 24px;
-  background-color: #A8E2F0;
-  color: #1a1a1a;
-  border-radius: 15px;
+  font-size: 12px;
+  color: #1A1A1A !important; /* Sobrescribir el color de texto */
+  background-color: #A8E2F0 !important; /* Sobrescribir el color de fondo */
   margin-bottom: 8px; 
   margin-right: 8px; 
 }

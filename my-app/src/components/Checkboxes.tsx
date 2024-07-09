@@ -25,14 +25,14 @@ const Checkboxes: React.FC = () => {
     <div className="checkboxes-container">
       <h2 className="heading2">Heading 2</h2>
       {options.map((option, index) => (
-        <div key={index} className="text-14">
+        <div key={index} className="checkbox">
           <input
             type="checkbox"
             checked={checked[index]}
             onChange={() => handleChange(index)}
             className="custom-checkbox"
           />
-          <label className="checkbox-label">{option}</label>
+          <label className="text-14">{option}</label>
         </div>
       ))}
     </div>

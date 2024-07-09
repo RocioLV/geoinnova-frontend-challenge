@@ -1,7 +1,13 @@
 .texts-container {
   position: absolute;
   width: 500px;
-  height: 211px;
+  height: 255px;
   left: 277px;
-  top: 193px;
+  top: 101px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  font-weight: 600;
+  color: #979797;
 }

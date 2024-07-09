@@ -6,17 +6,13 @@
   top: 193px;
 }
 
-.table-description {
-  margin-top: 8px;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1A1A1A;
-}
-
 .custom-table {
-  width: 100%;
-  height: 100%;
   max-width: 896px;
   max-height: 300px;
+}
+
+th {
+  font-size: 14px;
+  font-weight: 600;
+  color: #538E9C;
 }

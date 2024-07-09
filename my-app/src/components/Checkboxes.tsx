@@ -25,7 +25,7 @@ const Checkboxes: React.FC = () => {
     <div className="checkboxes-container">
       <h2 className="heading2">Heading 2</h2>
       {options.map((option, index) => (
-        <div key={index} className="checkbox-option">
+        <div key={index} className="text-14">
           <input
             type="checkbox"
             checked={checked[index]}

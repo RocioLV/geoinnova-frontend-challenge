@@ -2,32 +2,11 @@
   position: absolute;
   top: 587px; /* 523px de Files + 271px de Files + 32px de separación + 84px (separación vertical) */
   left: 277px; /* 253px de la sidebar + 24px de separación */
-  width: 96px;
-}
-
-.checkbox-option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px; /* Espacio vertical entre opciones */
 }
 
 .custom-checkbox {
   width: 16px;
   height: 16px;
   background-color: #FFFFFF;
-  border: 2px solid #926642;
-  border-radius: 3px;
   margin-right: 8px; /* Espacio entre el checkbox y el texto */
-}
-
-.custom-checkbox:checked {
-  background-color: #926642;
-  border-color: #926642;
-}
-
-.checkbox-label {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #1A1A1A;
 }

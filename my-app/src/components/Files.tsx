@@ -21,7 +21,7 @@ const Files: React.FC = () => {
         {files.map((file, index) => (
           <div key={index} className="file-item">
             <img src={fileIcon} alt="File Icon" className="file-icon" />
-            <span className="file-name">{file}</span>
+            <span className="text-14">{file}</span>
           </div>
         ))}
       </div>

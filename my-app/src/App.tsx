@@ -5,7 +5,7 @@ import Breadcrumb from '../src/components/Breadcrumb';
 import Text from './components/Text';
 import Files from './components/Files';
 import Checkboxes from './components/Checkboxes';
-import Tables from '../src/components/Table';  // Asegúrate de importar correctamente el componente
+import Tables from '../src/components/Table'; 
 import Badges from './components/Badges';
 import Buttons from './components/Button';
 import './App.css';

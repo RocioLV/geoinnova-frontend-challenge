@@ -1,7 +1,22 @@
-.custom-table {
+.table-container {
   position: absolute;
+  width: 896px;
+  height: 300px;
+  left: 865px;
+  top: 193px;
+}
+
+.table-description {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1A1A;
+}
+
+.custom-table {
+  width: 100%;
+  height: 100%;
   max-width: 896px;
   max-height: 300px;
-  left: 865px;
-  top: 274px;
 }

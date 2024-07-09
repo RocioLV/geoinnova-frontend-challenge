@@ -4,7 +4,7 @@ import './Badges.css';
 
 const Badges: React.FC = () => {
   const badges = Array.from({ length: 35 }, (_, i) => (
-    <Badge key={i} pill className="custom-badge">
+    <Badge key={i} pill className="badge">
       Badge
     </Badge>
   ));

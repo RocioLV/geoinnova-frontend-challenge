@@ -1,24 +1,8 @@
-/* Subtitle */
-.subtitle {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.1px;
-  color: #000000;
-  position: absolute;
-  width: 104.9px;
-  height: 19px;
-  left: 865px;
-  top: 598px;
-}
-
 /* Badges Container */
 .badges-container {
   position: absolute;
-  width: 1012px;
-  height: 123px;
+  max-width: 1012px;
+  max-height: 123px;
   left: 865px;
   top: 598px;
 }
@@ -34,9 +18,9 @@
   gap: 10px;
   width: 60px;
   height: 24px;
-  background: #A8E2F0;
-  border: 1px solid #A8E2F0;
+  background-color: #A8E2F0;
+  color: #1a1a1a;
   border-radius: 15px;
-  margin-bottom: 8px; /* Para espacio entre filas */
-  margin-right: 8px; /* Para espacio entre badges */
+  margin-bottom: 8px; 
+  margin-right: 8px; 
 }

@@ -2,6 +2,7 @@
 .buttons-container {
   position: absolute;
   width: 212px;
+  height: 38px;
   left: 1684px;
   top: 883px;
   display: flex;
@@ -11,8 +12,6 @@
 /* Button Izquierdo */
 .button-left {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
   width: 100px;
   background: #979797;
   border-radius: 6px;
@@ -21,8 +20,6 @@
 /* Button Derecho */
 .button-right {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
   width: 100px;
   background: #926642;
   border-radius: 6px;

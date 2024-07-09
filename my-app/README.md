@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# Proyecto GeoInnova
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto desarrollado como parte de un desafío técnico para GeoInnova. El objetivo es crear una aplicación web utilizando React, TypeScript y Bootstrap para mostrar habilidades en frontend.
 
-## Available Scripts
+## Contenido del Proyecto
 
-In the project directory, you can run:
+1. **Descripción**: Desarrollo de un frontend responsivo utilizando React, TypeScript y Bootstrap, basado en un diseño proporcionado en Figma.
 
-### `npm start`
+2. **Tecnologías Utilizadas**: React, TypeScript, Bootstrap, HTML, CSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. **Estructura de Directorios**: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+geoinnova-frontend-challenge
+├── /public
+│ ├── index.html
+│ └── ...
+├── /src
+│ ├── /assets
+│ ├── /components
+│ ├── index.tsx
+│ ├── App.css
+│ └── ...
+├── .gitignore
+├── package.json
+└── README.md
 
-### `npm test`
+## Contenido del Proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El proyecto GeoInnova es un desafío técnico desarrollado utilizando React, TypeScript y Bootstrap para construir un frontend responsivo. Aquí se detalla la organización y los componentes principales del proyecto:
 
-### `npm run build`
+- **Descripción**: Desarrollo de una aplicación web frontend que muestra habilidades en React, TypeScript y Bootstrap, basada en un diseño proporcionado en Figma.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Componentes Principales**:
+  - `App.tsx`: Componente principal que organiza la estructura de la aplicación.
+  - `Header.tsx`: Encabezado de la aplicación que incluye el logo y acciones de usuario.
+  - `Sidebar.tsx`: Barra lateral con opciones de menú.
+  - `Text.tsx`, `Files.tsx`, `Checkboxes.tsx`, `Tables.tsx`, `Badges.tsx`, `Buttons.tsx`: Componentes para mostrar texto, archivos, checkboxes, tablas, badges y botones respectivamente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Instalación y Ejecución**:
+  - Clonar el repositorio: `git clone https://github.com/RocioLV/geoinnova-frontend-challenge.git`
+  - Instalar dependencias: `npm install`
+  - Ejecutar la aplicación: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Gestión del Proyecto**: Utilización de Trello (https://trello.com/b/0Yq6WBm3) para la planificación y gestión de tareas.
+  ![Figma prototype](./src/assets/figma.png)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Desarrolladora**: Rocío Lorca Villalobos

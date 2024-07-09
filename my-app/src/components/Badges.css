@@ -1,7 +1,7 @@
 /* Badges Container */
 .badges-container {
   position: absolute;
-  max-width: 1012px;
+  width: 1012px;
   max-height: 123px;
   left: 865px;
   top: 598px;

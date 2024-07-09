@@ -4,15 +4,11 @@ Proyecto desarrollado como parte de un desafío técnico para GeoInnova. El obje
 
 ## Contenido del Proyecto
 
-1. **Descripción**: Desarrollo de un frontend responsivo utilizando React, TypeScript y Bootstrap, basado en un diseño proporcionado en Figma.
-
-2. **Tecnologías Utilizadas**: React, TypeScript, Bootstrap, HTML, CSS.
-
-## Contenido del Proyecto
-
 El proyecto GeoInnova es un desafío técnico desarrollado utilizando React, TypeScript y Bootstrap para construir un frontend responsivo. Aquí se detalla la organización y los componentes principales del proyecto:
 
 - **Descripción**: Desarrollo de una aplicación web frontend que muestra habilidades en React, TypeScript y Bootstrap, basada en un diseño proporcionado en Figma.
+
+- **Tecnologías Utilizadas**: React, TypeScript, Bootstrap, HTML, CSS.
 
 - **Componentes Principales**:
   - `App.tsx`: Componente principal que organiza la estructura de la aplicación.

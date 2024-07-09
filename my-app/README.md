@@ -8,22 +8,6 @@ Proyecto desarrollado como parte de un desafío técnico para GeoInnova. El obje
 
 2. **Tecnologías Utilizadas**: React, TypeScript, Bootstrap, HTML, CSS.
 
-3. **Estructura de Directorios**: 
-
-geoinnova-frontend-challenge
-├── /public
-│ ├── index.html
-│ └── ...
-├── /src
-│ ├── /assets
-│ ├── /components
-│ ├── index.tsx
-│ ├── App.css
-│ └── ...
-├── .gitignore
-├── package.json
-└── README.md
-
 ## Contenido del Proyecto
 
 El proyecto GeoInnova es un desafío técnico desarrollado utilizando React, TypeScript y Bootstrap para construir un frontend responsivo. Aquí se detalla la organización y los componentes principales del proyecto:
